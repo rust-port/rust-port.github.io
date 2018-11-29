@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="shortcust icon" href="images/mini.png">
+<title>Rust про гру</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<style>
+	.games{
+		margin-top: 10px;
+		}
+	.korpus > div, .korpus > input { display: none; }
+
+.korpus label { padding: 5px; border: 1px solid #aaa; line-height: 28px; cursor: pointer; position: absolute; bottom: 1px; background: #fff; }
+.korpus input[type="radio"]:checked + label { border-bottom: 2px solid #fff; }
+
+.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; padding: 5px; border: 1px solid #aaa; }
+b{
+color:black;	
+}
+.kol{
+column-count: 2;
+column-width:70px;
+}
+.has-background {
+    position: relative;
+}
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fullvideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.fullvideo video {
+    height: 100%;
+    width: 177.77777778vh;
+    min-width: 100%;
+    min-height: 56.25vw;
+    object-fit: cover;
+}
+.hero.is-dark {
+    background-color: #f6eae1;
+    color: #fff;
+}
+
+.has-background .hero-body {
+background-color: #1E202099;
+background-image: url(https://files.facepunch.com/garry/1b1011b1/test.png?1);
+    z-index: 1;
+}
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 25rem 1.5rem;
+}
+</style>
+	
+</head>
+<body>
+<!-- Хедер початок -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="index.html">Головна</a></li>
+				<li><a href="games.html">Про гру</a></li>
+				<li><a href="features.html">Новини</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Хедер кінець -->	
+<!-- Основа початок -->
+	
+	<section class="is-dark hero is-medium has-background has-background-video">
+		<div class="fullvideo">
+			<video loop="loop" muted="muted" autoplay="autoplay">
+			<source src="https://files.facepunch.com/s/rust/f14016" type="video/mp4">
+			</video>
+		</div> 
+	<div class="hero-body">
+		<div class="container">
+			<div class="title"></div>
+		</div>
+	</div>
+	</section>
+	<div class="korpus">
+  <input type="radio" name="odin" checked="checked" id="vkl1"/><label for="vkl1">Windows</label>
+  <input type="radio" name="odin" id="vkl2"/><label for="vkl2">Mac OS X</label>
+  <div class="kol"><h4>Мінімальні:</h4>
+<p>Потребує 64-бітних процесора та операційної системи</p>
+<p>ОС:<b>Windows 7 64bit</b></p>
+<p>Процесор:<b>Intel Core i7-3770 / AMD FX-9590 or better</b></p>
+<p>Оперативна пам’ять: <b>8 GB ОП</b></p>
+<p>Відеокарта:<b> GTX 670 2GB / AMD R9 280 better</b></p>
+<p>DirectX<b> версії 11</b></p>
+<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
+<p>Місце на диску: <b>20 GB доступного місця</b></p>
+<br><h4>Рекомендовані:</h4>
+<p>Потребує 64-бітних процесора та операційної системи</p>
+<p>ОС:<b>Windows 10 64bit</b></p>
+<p>Процесор:<b>Intel Core i7-4690K / AMD Ryzen 5 1600</b></p>
+<p>Оперативна пам’ять: <b>16 GB ОП</b></p>
+<p>Відеокарта:<b> GTX 980 / AMD R9 Fury</b></p>
+<p>DirectX<b> версії 12</b></p>
+<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
+<p>Місце на диску: <b>20 GB доступного місця</b></p>
+</div>
+  <div class="kol"><h4>Мінімальні:</h4>
+<p>Потребує 64-бітних процесора та операційної системи</p>
+<p>ОС:<b>OS X Lion 10.7</b></p>
+<p>Процесор:<b>Intel Core i7-3770 / AMD FX-9590 or better</b></p>
+<p>Оперативна пам’ять: <b>8 GB ОП</b></p>
+<p>Відеокарта:<b> GTX 670 2GB / AMD R9 280 better</b></p>
+<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
+<p>Місце на диску: <b>20 GB доступного місця</b></p>
+<br><h4>Рекомендовані:</h4>
+<p>Потребує 64-бітних процесора та операційної системи</p>
+<p>ОС:<b>OS X El Capitan 10.11</b></p>
+<p>Процесор:<b>Intel Core i7-4690K / AMD Ryzen 5 1600</b></p>
+<p>Оперативна пам’ять: <b>16 GB ОП</b></p>
+<p>Відеокарта:<b> GTX 980 / AMD R9 Fury</b></p>
+<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
+<p>Місце на диску: <b>20 GB доступного місця</b></p></div>
+</div>
+	<video controls="controls">
+ <source src="https://steamcdn-a.akamaihd.net/steam/apps/256684736/movie480.webm?t=1518121486">
+</video>
+<!-- Основа кінець -->
+<!-- Футер початок -->
+<div class="footer">
+	<div class="container">
+		<p>2018 Design by Andriy Gudko</p>
+	</div>
+	
+</div>
+<!-- Футер кінець -->
+</body>
+</html>

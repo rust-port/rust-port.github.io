@@ -1,0 +1,217 @@
+h4, h5, h6,
+h1, h2, h3 {margin-top: 0;}
+ul, ol {margin: 0;padding:0;}
+p {margin: 0;}
+body a:hover{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	text-decoration:none;
+}
+html, body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:100%;
+	background:#fff;
+}
+/*-- Хедер початок --*/
+.header{
+	background:#000000;
+	padding:2em 0;
+	position: relative;
+	z-index: 100;
+}
+.logo{
+	position:absolute;
+	top:0;
+	left:10%;
+}
+.navigation{
+	width:70%;
+	float:right;
+}
+ul.navig{
+	padding:0;
+	width: 65%;
+	float: left;
+	margin-top: 10px;
+}
+ul.navig li{
+	display: inline-block;
+	margin:0 10px;
+}
+ul.navig li a{
+	text-transform:uppercase;
+	font-size:1em;
+	color:#fff;
+	font-weight:700;
+}
+ul.navig li a:hover{
+	color:#ff7105;
+}
+.banner{
+	background:url(../images/banner.jpg)no-repeat;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	min-height:650px;
+}
+@media(max-width:1440px){
+	.banner{
+		min-height:600px;	
+	}
+}
+.banner-bot{
+	padding:4em 0;
+	text-align:center;
+}
+.banner-bot h2{
+	font-size:4em;
+	font-weight:700;
+	color:#000;
+	margin:0em 0 0.5em 0;
+}
+.banner-bot p{
+	font-size:1.1em;
+	font-weight:500;
+	color:#000;
+	line-height:1.8em;
+	margin:0 0 0.5em;
+}
+.banner-bot p:nth-of-type(2){
+	font-weight:100;
+	font-size:0.875em;
+	margin-bottom:2em;
+}
+.banner-bot a{
+	font-size:2em;
+	text-transform:uppercase;
+	font-weight:700;
+	color:#000;
+}
+nav a , ul.navig a{
+	position: relative;
+	display: inline-block;
+	margin: 0px 0px 10px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+nav a:hover,
+nav a:focus, ul.navig a:hover, ul.navig a:focus {
+	outline: none;
+}
+.cl-effect-3 a {
+	padding: 8px 0;
+}
+
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #ff7105;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/*-- Хедер кінець --*/
+/*-- Галерея початок --*/
+.gallery{
+	background:#4fbfa8;
+	padding:2em 0;
+	text-align:center;
+}
+.gallery h3{
+	font-size:4em;
+	font-weight:700;
+	color:#fff;
+	margin:0em 0 0.5em 0;
+}
+.b-link-stripe{
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	overflow:hidden;
+}
+.b-link-stripe .b-wrapper{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	text-align:center;
+	color:#ffffff;
+	overflow:hidden;
+}
+.b-link-stripe .b-line{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:20%;
+	background:rgba(15, 207, 140, 0.9);
+	transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	opacity:0;
+	visibility:hidden; 
+}
+/*-- Галерея кінець --*/
+/*-- Футер початок --*/
+.footer{
+	padding:2em 0;
+	text-align:center;
+	border-top:10px solid #3c3a3e;
+}
+.footer p{
+	font-size:0.85em;
+	color:#3c3a3e;
+	font-weight:100;
+}
+.footer p a{
+	color:#ff7105;
+}
+.footer p a:hover{
+	color:#4fbfa8;
+}
+
+/*-- Футер кінець --*/
+.sign {
+    padding: 5px;
+    float: left;
+    border: 1px solid #333; 
+    margin: 0 15px 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+   }
+   .sign figcaption {
+   text-align:center;
+   margin: 20px 0px 0px 50px; /* Отступы вокруг абзаца */
+   }
+
