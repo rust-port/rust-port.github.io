@@ -137,7 +137,20 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
 }
-
+.games{
+		margin-top: 50px;
+	}
+.sign {
+    padding: 5px;
+    float: left;
+    border: 1px solid #333; 
+    margin: 0 15px 5px 5px; 
+    background: #f0f0f0;
+   }
+   .sign figcaption {
+   text-align:center;
+   margin: 20px 0px 0px 50px;
+   }
 /*-- Хедер кінець --*/
 /*-- Галерея початок --*/
 .gallery{
@@ -203,15 +216,5 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
 }
 
 /*-- Футер кінець --*/
-.sign {
-    padding: 5px;
-    float: left;
-    border: 1px solid #333; 
-    margin: 0 15px 5px 5px; /* Отступы вокруг */
-    background: #f0f0f0; /* Цвет фона */ 
-   }
-   .sign figcaption {
-   text-align:center;
-   margin: 20px 0px 0px 50px; /* Отступы вокруг абзаца */
-   }
+
 
