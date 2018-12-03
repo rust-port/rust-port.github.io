@@ -59,38 +59,9 @@ ul.navig li a:hover{
 	-ms-background-size:cover;
 	min-height:650px;
 }
-@media(max-width:1440px){
-	.banner{
-		min-height:600px;	
-	}
-}
 .banner-bot{
 	padding:4em 0;
 	text-align:center;
-}
-.banner-bot h2{
-	font-size:4em;
-	font-weight:700;
-	color:#000;
-	margin:0em 0 0.5em 0;
-}
-.banner-bot p{
-	font-size:1.1em;
-	font-weight:500;
-	color:#000;
-	line-height:1.8em;
-	margin:0 0 0.5em;
-}
-.banner-bot p:nth-of-type(2){
-	font-weight:100;
-	font-size:0.875em;
-	margin-bottom:2em;
-}
-.banner-bot a{
-	font-size:2em;
-	text-transform:uppercase;
-	font-weight:700;
-	color:#000;
 }
 nav a , ul.navig a{
 	position: relative;
