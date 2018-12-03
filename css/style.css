@@ -170,13 +170,11 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
 /*-- Галерея кінець --*/
 /*-- Футер початок --*/
 .footer{
-	position: relative;
 	padding:0.5em;
 	text-align:center;
 	border-top:1px solid #EE4025;
 	color: red;
 	background-color: black;
-opacity:0.7;
 }
 /*-- Футер кінець --*/
 
