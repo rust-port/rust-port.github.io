@@ -123,7 +123,8 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
    margin: 20px 0px 0px 50px;
    }
 .guide {
-display: block;	
+display: flex;
+flex-direction: column;
 }
 /*-- Хедер кінець --*/
 /*-- Галерея початок --*/
