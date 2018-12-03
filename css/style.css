@@ -174,9 +174,10 @@ flex-direction: column;
 /*-- Галерея кінець --*/
 /*-- Футер початок --*/
 .footer{
-	padding:2em 0;
-	border-top:10px solid #EE4025;
+	padding:1em 0;
+	border-top: 4px solid #EE4025;
 	text-align:center;
+	
 }
 /*-- Футер кінець --*/
 
