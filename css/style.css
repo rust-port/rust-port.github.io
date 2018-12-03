@@ -122,6 +122,9 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
    text-align:center;
    margin: 20px 0px 0px 50px;
    }
+.guide {
+display: block;	
+}
 /*-- Хедер кінець --*/
 /*-- Галерея початок --*/
 .gallery{
