@@ -173,11 +173,9 @@ display: block;
 /*-- Галерея кінець --*/
 /*-- Футер початок --*/
 .footer{
-	padding:0.5em;
+	padding:2em 0;
+	border-top:10px solid #EE4025;
 	text-align:center;
-	border-top:1px solid #EE4025;
-	color: red;
-	background-color: black;
 }
 /*-- Футер кінець --*/
 
