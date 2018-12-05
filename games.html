@@ -2,142 +2,103 @@
 <html>
 <head>
 	<link rel="shortcust icon" href="images/mini.png">
-<title>Rust про гру</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <title>Rust про гру</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 <style>
+    body {
+			background-image: url(images/fon2.png);
+			background-size: cover;
+			background-attachment: fixed; 
+			}
 	.games{
-		margin-top: 10px;
+        margin-top: 4em;
+        padding-left: 8%; 
 		}
-	.korpus > div, .korpus > input { display: none; }
-
-.korpus label { padding: 5px; border: 1px solid #aaa; line-height: 28px; cursor: pointer; position: absolute; bottom: 1px; background: #fff; }
-.korpus input[type="radio"]:checked + label { border-bottom: 2px solid #fff; }
-
-.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
-.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; padding: 5px; border: 1px solid #aaa; }
-b{
-color:black;	
+    p{
+        color: rgb(184, 184, 184);
+    }
+    h3,h2,h1,b{
+        color: white;
+    }
+.table {
+padding-bottom:20px;
+width:100%; 
+text-align:justify; 
+column-width: 500px; 
+column-gap: 40px; 
+-moz-column-gap: 40px;
+-webkit-column-gap: 40px;
+column-rule: 1px solid #000; 
 }
-.kol{
-column-count: 2;
-column-width:70px;
-}
-.has-background {
-    position: relative;
-}
-.hero {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.fullvideo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-}
-.fullvideo video {
-    height: 100%;
-    width: 177.77777778vh;
-    min-width: 100%;
-    min-height: 56.25vw;
-    object-fit: cover;
-}
-.hero {
-    background-color: #f6eae1;
-    color: #fff;
-}
-
-.has-background .hero-body {
-background-color: #1E202099;
-background-image: url(https://files.facepunch.com/garry/1b1011b1/test.png?1);
-    z-index: 1;
-}
-.hero-body {
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding: 2 em 1.5 em;
+.border {
+    padding: 100px 0 40px 0;
 }
 </style>
-	
 </head>
 <body>
 <!-- Хедер початок -->
 <div class="header">
 	<div class="container">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""></a>
+			<a href="index.html"><img src="images/logo.png" alt="Rust logo"></a>
 		</div>
 		<span class="menu"></span>
 		<div class="navigation">
 			<ul class="navig cl-effect-3" >
 				<li><a href="index.html">Головна</a></li>
 				<li><a href="games.html">Про гру</a></li>
-				<li><a href="features.html">Новини</a></li>
+                <li><a href="features.html">Новини</a></li>
+                <li><a href="guide.html">Гайди</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 <!-- Хедер кінець -->	
-<!-- Основа початок -->
-	
-<section class="hero has-background">
-	<div class="fullvideo">
-		<video loop="loop" muted="muted" autoplay="autoplay">
-			<source src="https://files.facepunch.com/s/rust/f14016" type="video/mp4">
-		</video>
-	</div> 
-</section>
-	<div class="korpus">
-  <input type="radio" name="odin" checked="checked" id="vkl1"/><label for="vkl1">Windows</label>
-  <input type="radio" name="odin" id="vkl2"/><label for="vkl2">Mac OS X</label>
-  <div class="kol"><h4>Мінімальні:</h4>
-<p>Потребує 64-бітних процесора та операційної системи</p>
-<p>ОС:<b>Windows 7 64bit</b></p>
-<p>Процесор:<b>Intel Core i7-3770 / AMD FX-9590 or better</b></p>
-<p>Оперативна пам’ять: <b>8 GB ОП</b></p>
-<p>Відеокарта:<b> GTX 670 2GB / AMD R9 280 better</b></p>
-<p>DirectX<b> версії 11</b></p>
-<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
-<p>Місце на диску: <b>20 GB доступного місця</b></p>
-<br><h4>Рекомендовані:</h4>
-<p>Потребує 64-бітних процесора та операційної системи</p>
-<p>ОС:<b>Windows 10 64bit</b></p>
-<p>Процесор:<b>Intel Core i7-4690K / AMD Ryzen 5 1600</b></p>
-<p>Оперативна пам’ять: <b>16 GB ОП</b></p>
-<p>Відеокарта:<b> GTX 980 / AMD R9 Fury</b></p>
-<p>DirectX<b> версії 12</b></p>
-<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
-<p>Місце на диску: <b>20 GB доступного місця</b></p>
+<!-- Основа початок -->	
+<div class="games">
+    <b>Розробник:</b>
+    <p>Facepunch Studios</p>
+    <b>Видавець:</b>
+    <p>Facepunch Studios</p>
+    <b>Дата виходу гри (ранній доступ):</b>
+    <p>11 грудня 2013</p>
+    <b>Дата виходу гри (реліз):</b>
+    <p>8 лютого 2018</p>
+    <br>
+    <p><font color="white" style="italic"> Rust - це гра про виживання у відкритому світі з елементами жанрів action / adventure і RPG, що поєднує DayZ і Minecraft. Проект провів тривалий термін в Steam Early Access, за час якого в грі змінилося безліч речей - змінилася графіка, помінялися деталі ігрового процесу, однак же все інше залишилося колишнім. У Rust гравці опиняються посеред величезної, випадково згенерованої карти, і приймаються боротися за своє виживання.
+
+            Крім перестрілок, битв з іншими гравцями і представниками фауни, в Rust також є і будівництво. Це один з основних елементів геймплея - гравці повинні будувати собі притулок, а вже як вони будуть виглядати, залежить виключно від їх фантазії. Ніхто не заважає побудувати величезний замок, або, навпаки, обмежитися невеликим непримітним бункером - головне, щоб вистачило ресурсів, і щоб ніхто інший не зазіхнув на скарби, які можуть зберігатися в такому будинку. </font></p>
+    <div class="border">
+        <center>
+            <h2>Системні вимоги</h2>
+        </center>
+    </div>
+    <div class="table">
+        <ul>
+            <li><h3>Мінімальні:</h3></li>
+            <li><p>Потребує 64-бітних процесора та операційної системи</p></li>
+            <li><p>ОС:<b>Windows 7 64bit</b></p></li>
+            <li><p>Процесор:<b>Intel Core i7-3770 / AMD FX-9590 or better</b></p></li>
+            <li><p>Оперативна пам’ять: <b>8 GB ОП</b></p></li>
+            <li><p>Відеокарта:<b> GTX 670 2GB / AMD R9 280 better</b></p></li>
+            <li><p>DirectX<b> версії 11</b></p></li>
+            <li><p>Мережа:<b> Широкосмугове підключення до інтернету</b></p></li>
+            <li><p>Місце на диску: <b>20 GB доступного місця</b></p></li>
+            <li><h3>Рекомендовані:</h3></li>
+            <li><p>Потребує 64-бітних процесора та операційної системи</p></li>
+            <li><p>ОС:<b>Windows 10 64bit</b></p></li>
+            <li><p>Процесор:<b>Intel Core i7-4690K / AMD Ryzen 5 1600</b></p></li>
+            <li><p>Оперативна пам’ять: <b>16 GB ОП</b></p></li>
+            <li><p>Відеокарта:<b> GTX 980 / AMD R9 Fury</b></p></li>
+            <li><p>DirectX<b> версії 12</b></p></li>
+            <li><p>Мережа:<b> Широкосмугове підключення до інтернету</b></p></li>
+            <li><p>Місце на диску: <b>20 GB доступного місця</b></p></li>
+        </ul>
+    </div>
 </div>
-  <div class="kol"><h4>Мінімальні:</h4>
-<p>Потребує 64-бітних процесора та операційної системи</p>
-<p>ОС:<b>OS X Lion 10.7</b></p>
-<p>Процесор:<b>Intel Core i7-3770 / AMD FX-9590 or better</b></p>
-<p>Оперативна пам’ять: <b>8 GB ОП</b></p>
-<p>Відеокарта:<b> GTX 670 2GB / AMD R9 280 better</b></p>
-<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
-<p>Місце на диску: <b>20 GB доступного місця</b></p>
-<br><h4>Рекомендовані:</h4>
-<p>Потребує 64-бітних процесора та операційної системи</p>
-<p>ОС:<b>OS X El Capitan 10.11</b></p>
-<p>Процесор:<b>Intel Core i7-4690K / AMD Ryzen 5 1600</b></p>
-<p>Оперативна пам’ять: <b>16 GB ОП</b></p>
-<p>Відеокарта:<b> GTX 980 / AMD R9 Fury</b></p>
-<p>Мережа:<b> Широкосмугове підключення до інтернету</b></p>
-<p>Місце на диску: <b>20 GB доступного місця</b></p></div>
-</div>
-	<video controls="controls">
- <source src="https://steamcdn-a.akamaihd.net/steam/apps/256684736/movie480.webm?t=1518121486">
-</video>
 <!-- Основа кінець -->
 <!-- Футер початок -->
 <div>
