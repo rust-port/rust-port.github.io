@@ -15,7 +15,6 @@ html, body{
 	font-size:100%;
 	background:#fff;
 }
-/*-- Хедер початок --*/
 .header{
 	background:#000000;
 	padding:2em 0;
@@ -108,7 +107,7 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
 }
-.games{
+.margin-top{
 		margin-top: 50px;
 	}
 .sign {
@@ -118,7 +117,7 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
     margin: 0 15px 5px 5px; 
     background: #f0f0f0;
    }
-   .sign figcaption {
+.sign figcaption {
    text-align:center;
    margin: 20px 0px 0px 50px;
    }
@@ -126,7 +125,69 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
 display: flex;
 flex-direction: column;
 }
-/*-- Хедер кінець --*/
+.guide-1 {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.guide-1 p {
+text-align: justify;
+color: #fff;
+}
+.guide-1 h1 {
+text-align: center;	
+color: #fff;
+} 
+.marg {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+a.button {
+	position: relative;
+	display: inline-block;
+	font-size: 100%;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: rgb(156, 0, 0) -1px 1px, rgb(156, 0, 0) 1px 1px, rgb(156, 0, 0) 1px -1px, rgb(156, 0, 0) -1px -1px;
+	text-decoration: none;
+	user-select: none;
+	padding: .3em .7em;
+	outline: none;
+	border-radius: 7px;
+	background: rgb(156, 0, 0) repeating-linear-gradient(135deg, rgb(156, 0, 0), rgb(156, 0, 0) 10px, #000000 10px, #000000 20px, rgb(156, 0, 0) 20px);
+	box-shadow:
+	 inset -2px -2px rgba(0,0,0,.3),
+	 inset 2px 2px rgba(255,255,255,.3);
+	transition: background-position 999999s, color 999999s, text-shadow 999999s;
+  }
+  a.button:hover, a.button:focus {
+	text-shadow: #000000 -1px 1px, #160000 1px 1px, #160000 1px -1px, #160000 -1px -1px;
+	background: #000000 repeating-linear-gradient(135deg, #000000, #000000 10px, rgb(156, 0, 0) 10px, rgb(156, 0, 0) 20px, rgb(155, 0, 0) 20px) no-repeat;
+	background-size: 1000% 100%;
+  }
+  a.button:hover {
+	background-position: 0 0;
+  }
+  a.button:focus {
+	color: rgba(255,255,255,0);
+	text-shadow: rgba(1,117,177,0) -1px 1px, rgba(1,117,177,0) 1px 1px, rgba(1,117,177,0) 1px -1px, rgba(1,117,177,0) -1px -1px;
+	background-position: 900% 0;
+	transition: background-position linear 600s, color .5s, text-shadow .5s;
+  }
+  a.button:after {
+	content: "загрузка\2026";
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .3em .7em;
+	color: rgba(0,0,0,0);
+	text-shadow: none;
+	transition: 999999s;
+  }
+  a.button:focus:after {
+	color: #fff;
+	text-shadow: #160000 -1px 1px, #160000 1px 1px, #160000 1px -1px, #160000 -1px -1px;
+	transition: .5s;
+  }
 /*-- Галерея початок --*/
 .gallery{
 	background:#4fbfa8;
@@ -171,14 +232,32 @@ flex-direction: column;
 	opacity:0;
 	visibility:hidden; 
 }
+.marg-top {
+	margin-top: 5em;
+}
+.games{
+	margin-top: 4em;
+	padding-left: 8%; 
+	}
+	.table {
+		padding-bottom:20px;
+		width:100%; 
+		text-align:justify; 
+		column-width: 500px; 
+		column-gap: 40px; 
+		-moz-column-gap: 40px;
+		-webkit-column-gap: 40px;
+		column-rule: 1px solid #000; 
+		}
+		.border {
+			padding: 100px 0 40px 0;
+		}
 /*-- Галерея кінець --*/
 /*-- Футер початок --*/
 .footer{
 	padding:1em 0;
-	border-top: 4px solid #EE4025;
+	border-top: 2px solid rgb(255, 0, 0);
 	text-align:center;
-	
+	color: rgb(176, 246, 255);
 }
 /*-- Футер кінець --*/
-
-
