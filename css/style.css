@@ -247,7 +247,7 @@ a.button {
 		column-gap: 40px; 
 		-moz-column-gap: 40px;
 		-webkit-column-gap: 40px;
-		column-rule: 1px solid #000; 
+		column-rule: 1px solid red; 
 		}
 		.border {
 			padding: 100px 0 40px 0;
